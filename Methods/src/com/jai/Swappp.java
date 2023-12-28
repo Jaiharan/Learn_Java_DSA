@@ -18,8 +18,8 @@ public class Swappp {
         System.out.println(name);
     }
 
-    static void changeName(String name) {
-        name = "Nikul";
+    static void changeName(String naam) {
+        naam = "Nikul";
     }
 
     static void swap(int a , int b){
