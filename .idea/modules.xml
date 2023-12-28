@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Methodd.iml" filepath="$PROJECT_DIR$/Methodd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Conditional-loops/Conditional-loops.iml" filepath="$PROJECT_DIR$/Conditional-loops/Conditional-loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_basics/Java_basics.iml" filepath="$PROJECT_DIR$/Java_basics/Java_basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Learn Java.iml" filepath="$PROJECT_DIR$/.idea/Learn Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Methodd/Methodd.iml" filepath="$PROJECT_DIR$/Methodd/Methodd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Methods/Methods.iml" filepath="$PROJECT_DIR$/Methods/Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Switch-Nested-cases/Switch-Nested-cases.iml" filepath="$PROJECT_DIR$/Switch-Nested-cases/Switch-Nested-cases.iml" />
     </modules>
   </component>
 </project>
