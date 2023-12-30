@@ -37,6 +37,7 @@ public class Input {
         }
 
         System.out.println(Arrays.toString(Str));
+
         // modify
         Str[2] = "Jai"; // modify elements  by assigning ref var
         System.out.println(Arrays.toString(Str));
