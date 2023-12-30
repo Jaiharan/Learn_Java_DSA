@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class Question {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-//        int n = in.nextInt();
-//        boolean ans = isPrime(n);
-//        System.out.println(ans);
-        for (int i = 100; i < 1000; i++) {
-            if(Armstrong(i)){
-                System.out.print(i + " ");
-            }
-        }
+        int n = in.nextInt();
+        boolean ans = isPrime(n);
+        System.out.println(ans);
+//        for (int i = 100; i < 1000; i++) {
+//            if(Armstrong(i)){
+//                System.out.print(i + " ");
+//            }
+//        }
     }
 
     //print three digit armstrong numbers
