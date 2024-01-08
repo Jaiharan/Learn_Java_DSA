@@ -1,1 +1,1 @@
-This repo contains my learning journey or java concepts to revise later If Needed!!
+This repo contains my learning journey of java concepts and also DSA to revise later If Needed!!
