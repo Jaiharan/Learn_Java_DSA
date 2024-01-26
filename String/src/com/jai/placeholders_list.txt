@@ -1,0 +1,21 @@
+Here is a list of placeholder in java string:
+Format Specifier
+Data Type
+%b
+boolean
+%c
+character
+%d
+decimal integer
+%f
+floating-point number
+%h
+hexadecimal integer
+%o
+octal integer
+%s
+string
+%t
+date/time
+%x
+hexadecimal integer
