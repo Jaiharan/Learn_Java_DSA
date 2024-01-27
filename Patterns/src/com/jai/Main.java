@@ -4,7 +4,7 @@ package com.jai;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        pattern9(5);
+        pattern12(5);
     }
 
     static void pattern1(int n){
@@ -159,6 +159,43 @@ public class Main {
             for (int col = 1; col < n; col++) {
                 int atEveryIndex = OGn + 1 - Math.min(Math.min(row, col), Math.min(n-row,n-col));
                 System.out.print(atEveryIndex + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern10(int n){
+        /*         *
+                  **
+                 ***
+                ****
+               *****
+        */
+        for (int row = 1; row <= n; row++) {
+            for (int space = 0; space < n - row; space++) {
+                System.out.print("  ");
+            }
+            for (int col = 1; col <= row; col++) {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern11(int n){
+        /*  .    *****
+                 ****
+                 ***
+                 **
+                 *
+        */
+        for (int row = 1; row <= n; row++) {
+
+            for (int col = 1; col <=n - row; col++) {
+                System.out.print(" *");
+            }
+            for (int space = 0; space < row; space++) {
+                System.out.print("  ");
             }
             System.out.println();
         }
