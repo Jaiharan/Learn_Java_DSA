@@ -12,7 +12,7 @@ public class Main {
         System.out.println(Arrays.toString(arr));
     }
 
-    static void CyclicSort(int[] arr){
+    static void CyclicSort(int[] arr) {
         int i = 0;
         while(i < arr.length){
             int correct = arr[i] - 1;
