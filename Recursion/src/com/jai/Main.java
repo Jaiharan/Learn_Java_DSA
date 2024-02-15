@@ -4,8 +4,12 @@ package com.jai;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int ans = fibo(2);
+        int ans = fiboformula(50);
         System.out.println(ans);
+    }
+
+    static int fiboformula(int n){
+        return (int)(Math.pow(((1 + Math.sqrt(5))/ 2), n) / Math.sqrt(5));
     }
 
     static int fibo(int n){
