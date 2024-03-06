@@ -4,7 +4,7 @@ public class Strings {
     public static void main(String[] args) {
 //        skipA("","bsvafabnvah");
 //        System.out.println(skipA1("bsvafabnvah"));
-        System.out.println(skipString("bsvappleafabnvah"));
+        System.out.println(skipAppNotString("bsvappleafabnvah"));
     }
 
     static void skipA(String p,String up) {
@@ -43,6 +43,18 @@ public class Strings {
             return skipString(up.substring(5));
         } else {
             return up.charAt(0) + skipString(up.substring(1));
+        }
+    }
+
+    static String skipAppNotString(String up) {
+        if(up.isEmpty()){
+            return "";
+        }
+
+        if(up.startsWith("app") && !up.startsWith("apple")) {
+            return skipAppNotString(up.substring(3));
+        } else {
+            return up.charAt(0) + skipAppNotString(up.substring(1));
         }
     }
 }
