@@ -1,6 +1,9 @@
 package com.jai;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Permutation {
     public static void main(String[] args) {
@@ -8,8 +11,13 @@ public class Permutation {
 //        System.out.println(permutationsCount("","abcd"));
 //        ArrayList<String> ans = permutationsList("","abcde");
 //        System.out.println(ans);
-        int ans = permutationsArgCount("","abc",0);
-        System.out.println(ans);
+//        int ans = permutationsArgCount("","abc",0);
+//        System.out.println(ans);
+
+        Set<String> set = new TreeSet<>();
+        // Convert set to list
+        permutationsListUsingTree("", "abcd", set);
+        System.out.println(set);
     }
 
     static void permutations(String p,String up){
@@ -43,6 +51,21 @@ public class Permutation {
         }
 
         return ans;
+    }
+
+    // using TreeSet to store in lexi order
+    public static void permutationsListUsingTree(String p, String up, Set<String> set){
+        // Base condition
+        if (up.isEmpty()) {
+            set.add(p);
+            return;
+        }
+        // Generate permutations recursively
+        for (int i = 0; i <= p.length(); i++) {
+            String f = p.substring(0, i);
+            String s = p.substring(i, p.length());
+            permutationsListUsingTree(f + up.charAt(0) + s, up.substring(1), set);
+        }
     }
 
     static int permutationsCount(String p,String up){
