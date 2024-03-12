@@ -6,7 +6,7 @@ public class SubSeq {
     public static void main(String[] args) {
 //        subseqASCII("","abc");
 //        System.out.println(subseqRet("","abc"));
-        System.out.println(subseqRetASCII("","abc"));
+        System.out.println(subseqRet("","abc"));
     }
 
     static void subseq(String p,String up){
